@@ -1,51 +1,84 @@
-# Example Test Repository
+# Example Test Repository for API Endpoint Testing
 
-This is a demo repository with various API endpoints to test the automated API testing feature.
+This repository is designed to demonstrate the automated API endpoint testing feature.
 
-## Endpoints
+## 🚀 Quick Start
 
-### Next.js App Router
+### 1. Push to GitHub
 
-- `GET /api/users` - Get all users with pagination
-- `POST /api/users` - Create a new user
-- `GET /api/posts` - Get all posts with filters
-- `POST /api/posts` - Create a new post
-- `GET /api/posts/[id]` - Get a specific post
-- `PUT /api/posts/[id]` - Update a post
-- `DELETE /api/posts/[id]` - Delete a post
-- `POST /api/auth/login` - Login endpoint
+```bash
+cd calhacks12.0/example-test-repo
+git init
+git add .
+git commit -m "Initial commit: API testing example"
+git remote add origin <your-github-repo-url>
+git push -u origin main
+```
+
+### 2. Test in CalHacks App
+
+1. Navigate to your CalHacks app
+2. Go to the review page for this repository
+3. Click the **"🧪 Test API Endpoints"** button
+4. Watch it discover and test 21+ endpoints automatically!
+
+## 📁 What's Included
+
+This repo contains API endpoints in multiple frameworks:
+
+- **Next.js App Router** (9 endpoints)
+- **Express.js** (2 endpoints)
+- **Flask** (4 endpoints)
+- **FastAPI** (6 endpoints)
+
+### Next.js Endpoints (`app/api/`)
+
+- `GET /api/users` - Get all users
+- `POST /api/users` - Create user
+- `GET /api/posts` - Get all posts
+- `POST /api/posts` - Create post
+- `GET /api/posts/[id]` - Get specific post
+- `PUT /api/posts/[id]` - Update post
+- `DELETE /api/posts/[id]` - Delete post
+- `POST /api/auth/login` - Login
 - `GET /api/health` - Health check
 
-### Express.js
+### Express.js Routes (`routes/ping.js`)
 
 - `GET /ping` - Ping endpoint
 - `POST /ping/echo` - Echo endpoint
 
-### Flask
+### Flask Routes (`app.py`)
 
-- `GET /api/users` - Get users
-- `POST /api/users` - Create user
-- `GET /api/health` - Health check
-- `DELETE /api/users/:id` - Delete user
+- `GET /api/users`
+- `POST /api/users`
+- `GET /api/health`
+- `DELETE /api/users/:id`
 
-### FastAPI
+### FastAPI Routes (`main.py`)
 
-- `GET /users` - Get all users
-- `POST /users` - Create user
-- `GET /posts/{post_id}` - Get specific post
-- `PUT /posts/{post_id}` - Update post
-- `DELETE /posts/{post_id}` - Delete post
-- `GET /health` - Health check
+- `GET /users`
+- `POST /users`
+- `GET /posts/{post_id}`
+- `PUT /posts/{post_id}`
+- `DELETE /posts/{post_id}`
+- `GET /health`
 
-## Testing
+## 🎯 Expected Test Results
 
-Use the automated API testing feature to discover and test all these endpoints automatically!
+When you test this repo, you should see:
 
-1. Clone this repository
-2. Push it to GitHub
-3. Use the "Test API Endpoints" button in the review page
-4. See all endpoints automatically discovered and tested
+- ✅ **21+ endpoints discovered**
+- ✅ **Most endpoints pass** (demo mode)
+- ❌ **Auth endpoint may fail** (expected in demo)
+- ✅ **Summary stats** with pass/fail counts
 
-## Environment Variables
+## 🔧 Environment Variables
 
-See `.env.example` for all required environment variables.
+See `env.example` for all environment variables that will be parsed and used for testing.
+
+## 📝 Next Steps
+
+1. Push this repo to GitHub
+2. Use your CalHacks app to test it
+3. See comprehensive test results!
